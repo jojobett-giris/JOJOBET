@@ -1,0 +1,12 @@
+# Robots.txt - Jojobet Bahis Sitesi
+
+# Tüm arama motorlarının tüm sayfalara erişmesine izin veriyoruz
+User-agent: *
+Disallow: /admin/       # Admin sayfası arama motorları tarafından taranmasın
+Disallow: /login/       # Giriş sayfası taranmasın
+Disallow: /private/     # Gizli sayfalar
+Disallow: /checkout/    # Ödeme sayfaları (kullanıcı verisi içerir)
+Disallow: /cart/        # Sepet sayfası (kullanıcı verisi içerir)
+
+# Sitemap
+Sitemap: https://jojobett-giris.github.io/JOJOBET/sitemap.xml
