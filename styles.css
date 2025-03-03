@@ -1,0 +1,190 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #294c0b; /* Hafif gri arka plan */
+    color: #333; /* Koyu gri yazı rengi */
+}
+
+/* Header */
+header {
+    background-color: #294c0b; /* Koyu yeşil renk */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Sayfa İçeriği */
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #294c0b;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Başlıklar */
+section h2, section h3 {
+    color: #f3f0f0; /* Başlık rengi */
+}
+
+section p {
+    color: #faf5f5; /* Paragraf rengi */
+}
+
+/* Paragraf */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Hafif gri metin rengi */
+}
+
+/* Butonlar */
+.buttons {
+    display: flex;
+    justify-content: center; /* Butonları ortalar */
+    flex-wrap: wrap; /* Butonlar ekranı sığdırırsa alt alta geçsin */
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; /* Ortalamak için */
+}
+
+/* Genel Buton Stili */
+button {
+    background-color: #ff5733; /* İlk renk */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    animation: blink 1.0s infinite alternate; /* Yanıp sönme efekti */
+}
+
+/* Jojobet Giriş Butonu - Özel Stil */
+button#jojobet-giris {
+    font-size: 24px;
+    padding: 20px 40px;
+    background-color: #28a745; /* Yeşil renk */
+}
+
+/* Buton Hover ve Focus Efekti */
+button:hover {
+    background-color: #e04a2f; /* Daha koyu turuncu tonunda hover rengi */
+}
+
+button:focus {
+    outline: 2px solid #ff5733; /* Focus durumunda görünür sınır */
+}
+
+/* Yanıp Sönme Efekti */
+@keyframes blink {
+    0% {
+        background-color: #ff5733; /* Turuncu */
+    }
+    50% {
+        background-color: #28a745; /* Yeşil */
+    }
+    100% {
+        background-color: #007bff; /* Mavi */
+    }
+}
+
+/* Resim için Stil */
+.image-section {
+    text-align: center;
+    background-color: #294c0b;
+    margin: 20px 0;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bağlantılar */
+a {
+    text-decoration: none;
+    color: #ff5733; /* Bağlantılar için canlı turuncu */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e04a2f; /* Hover efekti */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Duyarlı Arka Plan Renk Değişimleri */
+@media (max-width: 480px) {
+    body {
+        background-color: #333; /* Küçük ekranlar için farklı bir arka plan */
+    }
+
+    header {
+        background-color: #218838; /* Küçük ekranlar için header rengi değişimi */
+    }
+}
+
+/* Erişilebilirlik İyileştirmeleri */
+button:focus,
+a:focus {
+    outline: 2px solid #ff5733; /* Focus durumunda görünür sınır */
+}
+
+button:active {
+    transform: scale(1.05); /* Buton aktif olduğunda hafif büyüme */
+}
